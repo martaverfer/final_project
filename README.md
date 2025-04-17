@@ -8,13 +8,13 @@ The goal of this project is to create a book recommendation system that clusters
 
 ## Project Workflow
 
-### 1. Data Collection
+### 🗂️ 1. Data Collection
 
 - Used [Amazon Books Reviews dataset](https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews) from Kaggle
 
 - Combined two datasets: one with book metadata (title, author, genre) and one with reviews
 
-### 2. Data Preprocessing
+### 🧹 2. Data Preprocessing
 
 - Cleaned the review texts
 
@@ -24,13 +24,13 @@ The goal of this project is to create a book recommendation system that clusters
 
 - Combined `title`, `author`, `genre`, and `shortened_text` into a new column `combined_features` for better semantic matching
 
-### 3. Feature Engineering
+### 📈 3. Feature Engineering
 
 - One-hot encoded genres for additional model inputs
 
 - Applied **VADER sentiment analysis** to reviews and stored sentiment scores
 
-### 4. Clustering
+### 🧪 4. Clustering
 
 - Used **KMeans clustering** on scaled features (ratings, sentiment, and encoded genre)
 
@@ -40,7 +40,7 @@ The goal of this project is to create a book recommendation system that clusters
 
 - Analize and label the clusters
 
-### 5. Text Vectorization
+### 🧾 5. Text Vectorization
 
 - Used **TfidfVectorizer** on `combined_features` for matching user queries to book profiles
 
@@ -48,11 +48,11 @@ The goal of this project is to create a book recommendation system that clusters
 
 - Calculated **cosine similarity** between user input and books to find top recommendations
 
-### 6. Summarization with Generative AI
+### 🤖 6. Summarization with Generative AI
 
-- Used OpenAI GPT (gpt-4 / gpt-4o) to generate short summaries of books based on title and author
+- Used OpenAI GPT (gpt-4o) to generate short summaries of books based on title and author
 
-### 7. Streamlit App
+### 🎨 7. Streamlit App
 
 - Built a user-friendly interface where:
 
