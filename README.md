@@ -36,7 +36,7 @@ The goal of this project is to create a book recommendation system that clusters
 
 - Used elbow method and silhouette score to determine the optimal number of clusters
 
-- Assigned **cluster_label** to each book
+- Assigned `cluster_label` to each book
 
 - Analize and label the clusters
 
